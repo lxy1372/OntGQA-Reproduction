@@ -29,6 +29,7 @@ huggingface/
 
 # Dataset files
 data/webqsp/*
+data/planner/*.jsonl
 
 # Results
 results/*
