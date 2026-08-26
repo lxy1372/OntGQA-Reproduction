@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Model / checkpoint files
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+
+# Hugging Face cache
+.cache/
+huggingface/
+
+# Dataset files
+data/webqsp/*
+
+# Results
+results/*
+
+# Keep directories
+!data/webqsp/.gitkeep
+!results/.gitkeep
+
+# System
+.DS_Store
+Thumbs.db
