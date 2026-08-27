@@ -1,46 +1,44 @@
 # Python
 __pycache__/
 *.py[cod]
-*.so
-.pytest_cache/
+*$py.class
 
 # Virtual environments
 .venv/
 venv/
 env/
+ENV/
 
 # IDE
 .vscode/
 .idea/
 
-# Logs
-*.log
-
-# Model / checkpoint files
-*.pt
-*.pth
-*.ckpt
-*.bin
-*.safetensors
+# Jupyter
+.ipynb_checkpoints/
 
 # Hugging Face cache
 .cache/
-huggingface/
+**/.cache/
 
-# Dataset files
-data/webqsp/*
-data/planner/*.jsonl
+# Logs
+*.log
 
-# Results
-results/*
-
-# Keep directories
-!data/webqsp/.gitkeep
-!results/.gitkeep
-
-# System
+# Temporary files
+*.tmp
+*.temp
 .DS_Store
 Thumbs.db
 
-models/
-outputs/
+# Base language model
+# Qwen2-1.5B-Instruct should be downloaded separately.
+models/Qwen2-1.5B-Instruct/
+
+# Raw WebQSP parquet files
+# These files should be downloaded/prepared separately.
+data/webqsp/*.parquet
+
+# Intermediate training checkpoints
+outputs/**/checkpoint-*/
+
+# Smoke-test / temporary outputs
+outputs/*_smoke/

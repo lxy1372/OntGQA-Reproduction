@@ -7,3 +7,7 @@ peft==0.13.2
 datasets==5.0.1
 pyarrow==25.0.1
 sentencepiece==0.2.2
+numpy
+pandas
+pyarrow
+tqdm
